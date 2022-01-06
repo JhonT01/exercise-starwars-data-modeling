@@ -1,6 +1,6 @@
 import os
 import sys
-from sqlalchemy import Column, ForeignKey, Integer, String
+from sqlalchemy import Column, ForeignKey, Integer, String, Float
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
@@ -76,7 +76,7 @@ class Vehicle(Base):
     vehicle_class = Column(String(250))
     manufacturer = Column(String(250))
     cost_in_credits = Column(Integer)
-    length = Column(Integer)
+    length = Column(Float)
     crew = Column(Integer)
     passengers = Column(Integer)
     max_atmosphering_speed = Column(Integer)
