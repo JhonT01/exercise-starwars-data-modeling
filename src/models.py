@@ -9,7 +9,7 @@ from eralchemy import render_er
 Base = declarative_base()
 
 class User(Base):
-    __tablename__ = 'User'
+    __tablename__ = 'user'
     # Here we define columns for the table person
     # Notice that each column is also a normal Python instance attribute.
     id = Column(Integer, primary_key=True)
@@ -18,7 +18,7 @@ class User(Base):
     Password = Column(String(50), nullable=False)
 
 class People(Base):
-    __tablename__ = 'People'
+    __tablename__ = 'people'
     # Here we define columns for the table address.
     # Notice that each column is also a normal Python instance attribute.
     id = Column(Integer, primary_key=True)
@@ -43,7 +43,7 @@ class People(Base):
         return {}
 
 class Planet(Base):
-    __tablename__ = 'Planet'
+    __tablename__ = 'planet'
     # Here we define columns for the table address.
     # Notice that each column is also a normal Python instance attribute.
     id = Column(Integer, primary_key=True)
@@ -66,7 +66,7 @@ class Planet(Base):
         return {}
 
 class Vehicle(Base):
-    __tablename__ = 'Vehicle'
+    __tablename__ = 'vehicle'
     # Here we define columns for the table address.
     # Notice that each column is also a normal Python instance attribute.
     id = Column(Integer, primary_key=True)
@@ -94,7 +94,7 @@ class Vehicle(Base):
 # --------------  Tablas Pivote  -------------------------------------
 
 class Favorite_People(Base):
-    __tablename__ = 'Favorite_People'
+    __tablename__ = 'favorite_People'
     # Here we define columns for the table address.
     # Notice that each column is also a normal Python instance attribute.
     id = Column(Integer, primary_key=True)
@@ -108,7 +108,7 @@ class Favorite_People(Base):
         return {}   
 
 class Favorite_People(Base):
-    __tablename__ = 'Favorite_Planet'
+    __tablename__ = 'favorite_Planet'
     # Here we define columns for the table address.
     # Notice that each column is also a normal Python instance attribute.
     id = Column(Integer, primary_key=True)
@@ -122,7 +122,7 @@ class Favorite_People(Base):
         return {}   
 
 class Favorite_Vehicle(Base):
-    __tablename__ = 'Favorite_Vehicle'
+    __tablename__ = 'favorite_Vehicle'
     # Here we define columns for the table address.
     # Notice that each column is also a normal Python instance attribute.
     id = Column(Integer, primary_key=True)
